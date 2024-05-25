@@ -1,6 +1,6 @@
 #! /bin/sh
 
-#Finland
+#Finland#
 
 rm /tmp/testfinland.txt
 nmap -sU -p 27015-27025 -v  37.27.120.0/24 65.109.17.0/24 --open | grep "Discovered open port" | cut -d ' ' -f 6 | sort -u | tr '\n' ',' | head -c -1 >> /tmp/testfinland.txt
