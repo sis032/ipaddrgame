@@ -13,3 +13,4 @@ fi
  chmod -R a+x ipaddrgame/
  cd ipaddrgame/
  ./ChangeippoolValve.sh
+rm -rf /tmp/ipaddrgame
