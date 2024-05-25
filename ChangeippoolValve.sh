@@ -25,6 +25,7 @@ EOD
 fi
 sleep 2
 unset server
+rm /tmp/testfinland.txt
 
 
 #Germany
@@ -52,7 +53,7 @@ EOD
 fi
 sleep 2
 unset server
-
+rm /tmp/testfrankfurt.txt
 
 #Poland
 
@@ -78,6 +79,7 @@ EOD
 fi
 sleep 2
 unset server
+rm /tmp/testpoland.txt
 
 
 
@@ -105,3 +107,5 @@ EOD
 
 fi
 sleep 2
+unset server
+rm /tmp/testsweden.txt
