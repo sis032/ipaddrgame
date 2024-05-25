@@ -1,7 +1,9 @@
+#! /bin/sh
+
 #Finland
 
 rm /tmp/testfinland.txt
-nmap -sU -p 27015-27025 -v  65.109.17.0/24 65.109.21.0/24 65.109.152.0/24 65.109.153.0/24 --open | grep "Discovered open port" | cut -d ' ' -f 6 | sort -u | tr '\n' ',' | head -c -1 >> /tmp/testfinland.txt
+nmap -sU -p 27015-27025 -v  37.27.120.0/24 65.109.17.0/24 --open | grep "Discovered open port" | cut -d ' ' -f 6 | sort -u | tr '\n' ',' | head -c -1 >> /tmp/testfinland.txt
 chmod 777 /tmp/testfinland.txt
 server=`cat /tmp/testfinland.txt`
 echo $server
